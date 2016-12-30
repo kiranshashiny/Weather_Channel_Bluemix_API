@@ -9,7 +9,7 @@ http://www.usatoday.com/story/tech/2015/03/31/ibm-weather-channel-cloud-collabor
 
 This API lets you get current and forecast weather data from the Weather channel and use it for our business.
 
-One would login to the BLuemix - get a set of credentials and then using some of the common API - get the data back in JSON format and use it for applications.
+One would login to the Bluemix - get a set of credentials and then using some of the common API - get the data back in JSON format and use it for applications.
 
 In this repository I have one such sample that will give you an insight on how to request for a three day data and examine the result in JSON format.
 
@@ -60,10 +60,16 @@ Has several key value pairs like max_temp, min_temp, Lunar(to say if it is a New
 
 This file has to be parsed in Python to get the results for 3 day temperature details.
 
-Run as $python parsedata.py
+Run the script:
+
+ $python parsedata.py
+
+Here you will see that I have printed a small subset of data that I was able to parse from the JSON results.
+You will see today was a Full Moon day, max temperature, minimum temperature, date ( in epoch -that has to converted to human readable format later ) and some narrative about the day's weather.
 
 
 <img width="733" src="https://cloud.githubusercontent.com/assets/14288989/21538298/88037820-cdc1-11e6-8652-649e818e5fd7.png">
 
-<img width="756" src="https://cloud.githubusercontent.com/assets/14288989/21538310/b9903a04-cdc1-11e6-968b-07a29b7c1534.png">
+This data is just a sample of how the IBM's Weather company data relates to what is seen on the Google's Weather forecast and you will notice they are somewhat similar in terms of temperature and other data.
 
+<img width="756" src="https://cloud.githubusercontent.com/assets/14288989/21538310/b9903a04-cdc1-11e6-968b-07a29b7c1534.png">
